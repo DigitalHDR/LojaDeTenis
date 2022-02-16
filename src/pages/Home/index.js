@@ -55,7 +55,7 @@ export default function Home() {
               Nike Joyride Run Flyknit
             </Shoes>
             <Shoes img={require('../../assets/6.png')} cost="R$920" onClick={() => alert('clicou')}>
-              Nike Air Max Dia Sujeito Programador
+              Nike Air Max Dia Programador
             </Shoes>
           </View>
 

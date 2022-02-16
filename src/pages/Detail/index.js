@@ -4,6 +4,7 @@ import { Text, View, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 
 import Botton from '../../components/Botton';
 import Dot from '../../components/Dot'
+import Footer from '../../components/Footer';
 import SizeButton from '../../components/SizeButton'
 
 export default function Detail({ navigation }) {
@@ -61,7 +62,11 @@ export default function Detail({ navigation }) {
           </Text>
         </View>
 
-        <Botton></Botton>
+        <Botton />
+
+        <View style={styles.line} />
+
+        <Footer />
 
       </View>
 
@@ -98,5 +103,10 @@ const styles = StyleSheet.create({
   textList: {
     fontSize: 16,
     lineHeight: 25,
+  },
+  line: {
+    borderWidth: 1,
+    borderBottomColor: '#ddd',
+    marginVertical: '2%'
   }
 })
